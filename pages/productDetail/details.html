@@ -4,108 +4,265 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="stylesheet" href="/assets/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <div class="sticky-banner">
+      <div class="aside-left">
+        <img src="/assets/images/aside/Aside_1.webp" alt="" />
+      </div>
+      <div class="aside-right">
+        <img src="/assets/images/aside/Aside_2.webp" alt="" />
+      </div>
+    </div>
+    <div class="speed-dial">
+      <img src="/assets/images/mess.png" alt="" />
+    </div>
     <header class="header">
-      <h1 class="header-title">ASM WEB DANH - LONG</h1>
-      <span class="header-desc">Kiến thức - Kinh nghiệm - Hỏi đáp</span>
+      <div class="bannerTop">
+        <img
+          src="/assets/images/bannerTop.webp"
+          alt=""
+          width="100%"
+          height="auto"
+        />
+      </div>
+      <div class="container">
+        <div
+          class="header-upper d-flex align-items container gap-10 text-white"
+        >
+          <div class="logo d-flex align-items col-4 gap-10">
+            <img src="/assets/images/logo.png" alt="Logo" />
+            <div class="logo-text">Lucky And Power</div>
+          </div>
+          <div class="search-bar d-flex align-items col-4">
+            <input type="text" placeholder="Search..." />
+            <button>Search</button>
+          </div>
+          <div class="d-flex align-items justify-content-center gap-20 col-4">
+            <div
+              class="d-flex justify-content-center align-items gap-10 action"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>Giỏ hàng
+            </div>
+            <div
+              class="d-flex justify-content-center align-items gap-10 action"
+            >
+              <i class="fa-solid fa-bell"></i>Thông báo
+            </div>
+            <div class="d-flex justify-content-center align-items gap-10">
+              <i class="fa-solid fa-user"></i>Đăng nhập
+            </div>
+            <!-- <div class="icon"><i class="fas fa-sign-in-alt"></i></div> -->
+          </div>
+        </div>
+
+        <nav class="navbar">
+          <div class="navbar-menu">
+            <a href="home.html">Trang chủ</a> | <a href="">Công nghệ</a> |
+            <a href="">Số hoá</a> | <a href="">Tech award</a> |
+            <a href="">xây dựng cấu hình</a> | <a href="">Tin công nghệ</a> |
+            <a href="">Khuyến mãi</a> |
+          </div>
+        </nav>
+      </div>
     </header>
-    <nav class="navbar">
-      <div class="navbar-menu">
-        <a href="home.html">Trang chủ</a> | <a href="">Công nghệ</a> |
-        <a href="">Số hoá</a> |
-        <a href="">Tech award</a>
-      </div>
-      <div class="navbar-auth">
-        <a href="">Đăng nhập / Đăng ký</a>
-      </div>
-    </nav>
-    <section class="content container">
-      <div class="row">
-        <div class="col col-9">
-          <div class="content-title">
-            Facebook chi bộn tiền giữ chân nhân viên sau bê bối
+    <div class="container">
+      <div class="product-details">
+        <div class="row">
+          <div class="col col-5">
+            <div class="detail-left">
+              <div class="product-img">
+                <img src="/assets/images/single/main_img.webp" alt="" />
+              </div>
+              <div class="slider-img d-flex">
+                <img src="/assets/images/single/list_img_1.webp" alt="" />
+                <img src="/assets/images/single/list_img_1.webp" alt="" />
+              </div>
+            </div>
           </div>
-          <div class="content-time">Thứ tư, 5/1/2022, 12:00 (GMT+7)</div>
-          <div class="content-body">
-            Meta, công ty mẹ của Facebook, được cho là đã chi nhiều tiền để
-            tuyển dụng và giữ chân nhân viên sau hàng loạt bê bối làm xấu hình
-            ảnh công ty. Business Insider đã tìm hiểu thông tin từ các nhà tuyển
-            dụng, nhân viên cũ của Meta, cũng như các tài liệu nội bộ... và
-            khẳng định số tiền công ty này đang sử dụng để thu hút nhân sự "lớn
-            hơn bao giờ hết". Cạnh tranh nhân lực ở Thung lũng Silicon vẫn luôn
-            diễn ra gay gắt, trong khi hình ảnh Meta đang dần xấu đi, buộc công
-            ty phải trả giá cao hơn các đối thủ. "Một điều Facebook vẫn có thể
-            làm là trả nhiều tiền hơn nữa", Jose Guardado, nhà tuyển dụng công
-            nghệ giàu kinh nghiệm và là người sáng lập Build Talent, nói. "Họ dễ
-            dàng chi thêm tiền giữ chân những nhân sự hiện có, cũng như trả hơn
-            các công ty khác khi tuyển dụng". Tại Thung lũng Silicon, sự phát
-            triển hay suy tàn của một công ty phụ thuộc rất lớn vào việc tuyển
-            được những nhân viên tài năng nhất. Nếu không có lượng lớn kỹ sư và
-            chuyên gia kỹ thuật tay nghề cao, công ty đó có thể không đạt tốc độ
-            ra mắt sản phẩm mới hoặc mất nhiều thời gian hơn để cập nhật các
-            tính năng quan trọng so với đối thủ.
-          </div>
-          <div class="content-img">
-            <img src="/assets/images/1.png" alt="" />
-          </div>
-          <div class="content-body">
-            Năm nay, Meta dự kiến chi phí tuyển dụng có thể tăng lên 97 triệu
-            USD so với mức 70 triệu USD năm 2021. Theo một số nguồn tin, mức
-            tăng này phần lớn là do "đầu tư vào tài năng, kỹ thuật và sản phẩm".
-            Alan Johnson, CEO công ty tư vấn Johnson Associates, cho biết Meta
-            và một số công ty đã phải tăng lương để khắc phục các vấn đề về
-            tuyển dụng và giữ chân nhân viên. Những doanh nghiệp này có điểm
-            chung là dính một số bê bối hoặc khiến công chúng thay đổi nhận thức
-            về mình theo chiều hướng xấu. Theo tài liệu nội bộ mà Protocol có
-            được, công ty của Mark Zuckerberg đang có hơn 4.300 công việc nhưng
-            tỷ lệ chấp nhận các lời mời làm việc đang giảm dần. Năm qua, hàng
-            chục giám đốc cấp cao rời đi, trong khi nhiều nhân viên khác cân
-            nhắc kiếm cơ hội ở nơi khác. Trước đây, Facebook là điểm đến mơ ước
-            tại Thung lũng Silicon nhờ chính sách mở, lương thưởng hậu hĩnh và
-            nhiều đặc quyền, khiến nhân viên đã làm tại đây hiếm khi rời đi. Dù
-            vậy, hình ảnh đó đã thay đổi. Năm 2021, một cựu kỹ sư Oculus - bộ
-            phận sản xuất thiết bị thực tế ảo của Facebook - thậm chí nói quãng
-            thời gian làm tại Facebook có thể sẽ là "vết đen" trong sự nghiệp
-            của một ai đó. Một cựu kỹ sư phần cứng tại Facebook cũng chia sẻ cảm
-            xúc tương tự. Người này cho biết đã nghỉ việc vì lo ngại về tình
-            trạng thông tin sai lệch trên nền tảng và ảnh hưởng của nó đối với
-            trẻ em. Một số cựu nhân viên khác tiết lộ rời Facebook vì danh tiếng
-            công ty bị ảnh hưởng nghiêm trọng, dù họ được đề nghị mức lương cao
-            hơn. Meta cũng hào phóng hơn về các khoản thưởng. Số liệu của
-            Levels.fyi cho thấy, ở cấp độ giám đốc nhóm cấp cao, nhân viên nhận
-            3-6 triệu USD mỗi năm bằng cổ phiếu. Các giám đốc tầm trung, quản lý
-            nhận trung bình 1 triệu USD, còn kỹ sư cao cấp từ 600.000 USD.
+          <div class="col col-7">
+            <div class="detail-right">
+              <div class="detail-title">Laptop gaming</div>
+              <div class="detail-desc">laptop gaming so 1</div>
+              <div class="detail-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i
+                ><i class="fa-regular fa-star"></i>
+              </div>
+              <div class="detail-select">
+                <span> Lựa chọn: </span>
+                <select value="2">
+                  <option key="1" value="1">1</option>
+                  <option key="1" value="1">2</option>
+                  <option key="1" value="1">3</option>
+                  <option key="1" value="1">4</option>
+                  <option key="1" value="1">5</option>
+                </select>
+              </div>
+              <div class="detail-btn d-flex align-items gap-10">
+                <div class="detail-btn-buy">
+                  <div>Mua ngay</div>
+                </div>
+                <div class="detail-btn-add">
+                  <div>Thêm vào giỏ hàng</div>
+                </div>
+              </div>
+            </div>
+            <div class="gift-wrapper">
+              <div class="gift-title">Khuyến mãi đã nhận</div>
+              <div class="gift">
+                <div class="gift-img d-flex align-items">
+                  <img src="/assets/images/single/gift.png" alt="" />
+                  <span
+                    >1x Mã giảm thêm 5% tối đa 500.000đ cho một số sản phẩm Điện
+                    Gia Dụng
+                  </span>
+                </div>
+                <div class="gift-img d-flex align-items">
+                  <img src="/assets/images/single/gift.png" alt="" />
+                  <span
+                    >1x Mã giảm thêm 600.000đ cho màn hình LG Gram View
+                  </span>
+                </div>
+                <div class="gift-img d-flex align-items">
+                  <img src="/assets/images/single/gift.png" alt="" />
+                  <span
+                    >1x Mã giảm thêm 150.000 cho một số chuột Logitech, MSI,
+                    Newmen, Asus, Tai nghe Zidli
+                  </span>
+                </div>
+                <div class="gift-img d-flex align-items">
+                  <img src="/assets/images/single/gift.png" alt="" />
+                  <span
+                    >1x Balo laptop Targus 15.6 TSB883 Black (Safire) (Quà tặng
+                    - logo Phong Vũ)
+                  </span>
+                </div>
+              </div>
+              <div class="gift-choice-wrapper">
+                <div class="gift-choice-title">
+                  Chọn 1 trong những khuyến mãi sau
+                </div>
+                <div class="gift-choice">
+                  <div class="gift-choice-img">
+                    <img src="/assets/images/single/gift.png" alt="" />
+                  </div>
+                  <div class="gift-choice-content">
+                    <div class="content-top">
+                      Giảm 6.500.000₫ (áp dụng vào giá sản phẩm)
+                    </div>
+                    <div class="content-middle">
+                      Khuyến mãi áp dụng khi mua đủ 1 sản phẩm, mua tối thiểu 1
+                      sản phẩm
+                    </div>
+                    <div class="content-bottom">HSD: 10/11/2023</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col col-3">
-          <div class="sidebar">
-            <div class="intro">
-              <div class="contact-title">Giới thiệu</div>
-              <iframe
-                width="100%"
-                src="https://www.youtube.com/embed/mZF9BRZkTDQ"
-              ></iframe>
-            </div>
-            <div class="follow">
-              <img width="50%" src="./assets/images/social.jpg" />
-            </div>
-            <div class="contact">
-              <textarea
-                name="contact"
-                id="contact"
-                placeholder="Liên hệ:"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </div>
+      </div>
+      <div class="reviews">
+        <div class="paper">
+          <h4 class="title">Nhận xét</h4>
+          <div class="comment-box">
+            <h5 class="comment-title">Danh</h5>
+            <div class="rating">3</div>
+            <p class="comment-text">Sản phẩm tốt</p>
+          </div>
+          <div class="comment-box">
+            <h5 class="comment-title">Danh</h5>
+            <div class="rating">3</div>
+            <p class="comment-text">Sản phẩm tốt</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <footer class="footer">
-      Website được nhiều người xem nhất - Thuộc khoa CNTT
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <div class="title">Hỗ trợ khách hàng</div>
+            <div class="menu">
+              <div class="menu-item">Thẻ ưu đãi</div>
+              <div class="menu-item">Hướng dẫn mua online</div>
+              <div class="menu-item">Ưu đãi dành cho doanh nghiệp</div>
+              <div class="menu-item">Chính sách trả góp</div>
+              <div class="menu-item">Dịch vụ sửa chữa</div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="title">Hỗ trợ khách hàng</div>
+            <div class="menu">
+              <div class="menu-item">Thẻ ưu đãi</div>
+              <div class="menu-item">Hướng dẫn mua online</div>
+              <div class="menu-item">Ưu đãi dành cho doanh nghiệp</div>
+              <div class="menu-item">Chính sách trả góp</div>
+              <div class="menu-item">Dịch vụ sửa chữa</div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="title">Hỗ trợ khách hàng</div>
+            <div class="menu">
+              <div class="menu-item">Thẻ ưu đãi</div>
+              <div class="menu-item">Hướng dẫn mua online</div>
+              <div class="menu-item">Ưu đãi dành cho doanh nghiệp</div>
+              <div class="menu-item">Chính sách trả góp</div>
+              <div class="menu-item">Dịch vụ sửa chữa</div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="title">Hỗ trợ khách hàng</div>
+            <div class="menu">
+              <div class="menu-item">Thẻ ưu đãi</div>
+              <div class="menu-item">Hướng dẫn mua online</div>
+              <div class="menu-item">Ưu đãi dành cho doanh nghiệp</div>
+              <div class="menu-item">Chính sách trả góp</div>
+              <div class="menu-item">Dịch vụ sửa chữa</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="title">Phương thức thanh toán</div>
+            <div class="menu d-flex align-items gap-20">
+              <div class="menu-item-icon">
+                <i class="fa-solid fa-money-check-dollar"></i>
+                Internet Banking
+              </div>
+              <div class="menu-item-icon">
+                <i class="fa-solid fa-qrcode"></i>
+                QR Code
+              </div>
+              <div class="menu-item-icon">
+                <i class="fa-regular fa-clock"></i>
+                Trả góp
+              </div>
+              <div class="menu-item-icon">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                Tiền mặt
+              </div>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="title">Danh sách ngân hàng thanh toán online</div>
+            <div class="menu">
+              <img src="/assets/images/vnpay_bank.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
