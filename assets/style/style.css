@@ -528,7 +528,8 @@ footer {
   margin: 20px 0;
 }
 
-.detail-btn .detail-btn-buy {
+.detail-btn .detail-btn-buy,
+.btn-check {
   border-radius: 0.25rem;
   background-color: rgb(20, 53, 195);
   position: relative;
@@ -760,4 +761,64 @@ select {
   top: 50%;
   right: 50%;
   transform: translate(75%, -50%) rotate(135deg);
+}
+.filter-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.from-price {
+  margin-bottom: 10px;
+}
+.input-price {
+  width: 100px;
+  border-radius: 2px;
+  border: 1px solid #000;
+  font-size: 15px;
+  padding: 5px;
+}
+.colors {
+  list-style-type: none;
+}
+.colors li {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+.filter-select {
+  background-color: #f3f3f3;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  border: 0px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.filter-choice .filter-select option {
+  padding: 5px;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+}
+.filter-sort-grid {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.sort {
+  min-width: 75px;
+  margin-left: 15px;
+  font-size: 15px;
+}
+
+.totalProducts {
+  min-width: 95px;
+  margin-right: 15px;
+}
+.hideproduct {
+  margin-right: 15px;
+  background-color: white;
+  border-radius: 5px;
 }
