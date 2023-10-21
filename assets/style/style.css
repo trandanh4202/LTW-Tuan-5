@@ -10,6 +10,12 @@ ol {
 a {
   text-decoration: none;
 }
+button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  cursor: pointer;
+}
 .navbar {
   padding: 10px;
 }
@@ -37,6 +43,10 @@ a {
 .col-2 {
   flex: 0 0 16.66%;
   max-width: 16.66%;
+}
+.col-2_4 {
+  flex: 0 0 20%;
+  max-width: 20%;
 }
 .col-3 {
   flex: 0 0 25%;
@@ -149,6 +159,7 @@ a {
 .logo {
   width: 90px;
   height: 60px;
+  color: white;
 }
 .logo img {
   width: auto;
@@ -529,6 +540,7 @@ footer {
 }
 
 .detail-btn .detail-btn-buy,
+.checkout,
 .btn-check {
   border-radius: 0.25rem;
   background-color: rgb(20, 53, 195);
@@ -544,7 +556,7 @@ footer {
   transition-property: background-color;
   height: 46px;
 }
-.detail-btn div {
+.detail-btn button {
   margin: 0px;
   padding: 0px;
   border-style: none;
@@ -556,7 +568,6 @@ footer {
   text-decoration: unset;
   line-height: 24px;
   overflow: hidden;
-
   font-size: 14px;
 }
 .detail-btn .detail-btn-add {
@@ -613,7 +624,9 @@ select {
   font-size: 30px;
   font-weight: 500;
 }
-
+.rating .cmt-rating i {
+  font-size: 15px;
+}
 .comment-text {
   font-size: 20px;
   font-weight: 400;
@@ -821,4 +834,191 @@ select {
   margin-right: 15px;
   background-color: white;
   border-radius: 5px;
+}
+/* Drawer */
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -500px;
+  width: 500px;
+  height: 100%;
+  background-color: white;
+  padding: 20px;
+  transition: right 0.3s;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.drawer h2 {
+  margin: 0;
+  color: black;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+#openDrawer {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#closeDrawer {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 20px 0;
+  width: 50%;
+}
+#cartItems {
+  color: black;
+}
+#cartItems li {
+  color: black;
+}
+#totalPrice {
+  color: black;
+}
+
+.cart-item-img {
+  width: 20%;
+}
+.cart-item-img img {
+  width: 100%;
+  object-fit: contain;
+}
+.delete-btn {
+  background-color: #000;
+  color: white;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.typography {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* CSS for the Button component */
+.button {
+  background-color: transparent;
+  border: 2px solid #000;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+/* CSS for the Modal */
+.modal {
+  position: absolute;
+  width: 300px;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* CSS for the List */
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+/* CSS for the Radio component */
+.radio {
+  margin-right: 10px;
+}
+
+/* CSS for the Buttons in the Modal */
+.modal-button {
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.badge {
+  background-color: #1976d2;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -70x;
+  left: -10px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+}
+
+.image-container {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #f3f3f5;
+  position: relative;
+}
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.location-title {
+  color: red;
+}
+.location-info {
+  font-size: 25px;
+}
+.typography {
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+.divider {
+  border: 1px solid #333;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0;
+}
+.price {
+  font-weight: 600;
+  font-size: 20px;
+}
+.box p {
+  font-size: 20px;
+}
+.toggle-modal {
+  border-radius: 0.25rem;
+  padding: 10px;
+  background-color: rgb(20, 53, 195);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  color: rgb(255, 255, 255);
+  /* width: 100%; */
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.price-payment {
+  font-size: 18px;
+  margin-right: 10px;
 }

@@ -40,10 +40,13 @@
         <div
           class="header-upper d-flex align-items container gap-10 text-white"
         >
-          <div class="logo d-flex align-items col-4 gap-10">
+          <a
+            href="/pages/home/home.html"
+            class="logo d-flex align-items col-4 gap-10"
+          >
             <img src="/assets/images/logo.png" alt="Logo" />
             <div class="logo-text">Lucky And Power</div>
-          </div>
+          </a>
           <div class="search-bar d-flex align-items col-4">
             <input type="text" placeholder="Search..." />
             <button>Search</button>
@@ -51,8 +54,25 @@
           <div class="d-flex align-items justify-content-center gap-20 col-4">
             <div
               class="d-flex justify-content-center align-items gap-10 action"
+              id="openDrawer"
             >
               <i class="fa-solid fa-cart-shopping"></i>Giỏ hàng
+            </div>
+            <div class="drawer" id="cartDrawer">
+              <h2>Giỏ Hàng</h2>
+              <table id="cartItems">
+                <thead>
+                  <tr class="cart-item-header">
+                    <td class="cart-item-img">Hình ảnh</td>
+                    <td class="cart-item-title">Tên sản phẩm</td>
+                    <td class="cart-item-price">Giá sản phẩm</td>
+                    <td class="cart-item-quantity">Số lượng</td>
+                    <td class="cart-item-total">Tổng tiền</td>
+                  </tr>
+                </thead>
+              </table>
+              <p id="totalPrice">Tổng cộng: $0.00</p>
+              <button id="closeDrawer">Đóng</button>
             </div>
             <div
               class="d-flex justify-content-center align-items gap-10 action"
@@ -154,17 +174,37 @@
           </div>
         </div>
       </section>
-      <section class="banner-mid">
-        <div class="row">
-          <div class="banner-mid-wrapper col-6">
-            <img src="/assets/images/banner-mid/banner-mid_1.webp" alt="" />
+
+      <div class="slider">
+        <div class="slider__slides">
+          <div class="slider__slide active">
+            <img
+              src="https://lh3.googleusercontent.com/mlKfpZQs80dvjAYeeB4MwQe4-rJvb3ZTJ_s5PS9v1PCPxY4T-QD9EjhBKNyRUMnvQwZBwntSHPAoQpPVdddH-ZTJot08WqC3=w1920-rw"
+              alt="Image 1"
+            />
           </div>
-          <div class="banner-mid-wrapper col-6">
-            <img src="/assets/images/banner-mid/Banner-mid_2.webp" alt="" />
+          <div class="slider__slide">
+            <img
+              src="https://lh3.googleusercontent.com/KU0g__QTkLdAAyt_Oa18jVsgyXlIkWGSoEZNHKSjLtSB91w-442-nKtaUDOFantvGyLslr22rM_kJVkWARby5s75UFrXWUo=w1920-rw"
+              alt="Image 2"
+            />
+          </div>
+          <div class="slider__slide">
+            <img
+              src="https://lh3.googleusercontent.com/ryKnRM6pBr5ZGqtuLq8Quys5eiwxBFtnNlKSOwPFCDY0kJY46D6NofSl-71_LpfDNqHptA9DGjJLHwNKp7qukpSFy9GUEoti=w1920-rw"
+              alt="Image 3"
+            />
           </div>
         </div>
-      </section>
-
+        <div id="nav-button--prev" class="slider__nav-button"></div>
+        <div id="nav-button--next" class="slider__nav-button"></div>
+        <div class="slider__nav">
+          <div class="slider__navlink active"></div>
+          <div class="slider__navlink"></div>
+          <div class="slider__navlink"></div>
+          <div class="slider__navlink"></div>
+        </div>
+      </div>
       <section class="product-sale">
         <div class="product-sale-top">
           <div class="row justify-content-around align-items">
@@ -369,36 +409,16 @@
           </div>
         </div>
       </section>
-      <div class="slider">
-        <div class="slider__slides">
-          <div class="slider__slide active">
-            <img
-              src="https://lh3.googleusercontent.com/mlKfpZQs80dvjAYeeB4MwQe4-rJvb3ZTJ_s5PS9v1PCPxY4T-QD9EjhBKNyRUMnvQwZBwntSHPAoQpPVdddH-ZTJot08WqC3=w1920-rw"
-              alt="Image 1"
-            />
+      <section class="banner-mid">
+        <div class="row">
+          <div class="banner-mid-wrapper col-6">
+            <img src="/assets/images/banner-mid/banner-mid_1.webp" alt="" />
           </div>
-          <div class="slider__slide">
-            <img
-              src="https://lh3.googleusercontent.com/KU0g__QTkLdAAyt_Oa18jVsgyXlIkWGSoEZNHKSjLtSB91w-442-nKtaUDOFantvGyLslr22rM_kJVkWARby5s75UFrXWUo=w1920-rw"
-              alt="Image 2"
-            />
-          </div>
-          <div class="slider__slide">
-            <img
-              src="https://lh3.googleusercontent.com/ryKnRM6pBr5ZGqtuLq8Quys5eiwxBFtnNlKSOwPFCDY0kJY46D6NofSl-71_LpfDNqHptA9DGjJLHwNKp7qukpSFy9GUEoti=w1920-rw"
-              alt="Image 3"
-            />
+          <div class="banner-mid-wrapper col-6">
+            <img src="/assets/images/banner-mid/Banner-mid_2.webp" alt="" />
           </div>
         </div>
-        <div id="nav-button--prev" class="slider__nav-button"></div>
-        <div id="nav-button--next" class="slider__nav-button"></div>
-        <div class="slider__nav">
-          <div class="slider__navlink active"></div>
-          <div class="slider__navlink"></div>
-          <div class="slider__navlink"></div>
-          <div class="slider__navlink"></div>
-        </div>
-      </div>
+      </section>
       <section class="product-show">
         <div
           class="product-show-top d-flex align-items justify-content-between"
@@ -671,5 +691,6 @@
       </div>
     </footer>
     <script src="./slider.js"></script>
+    <script src="../productDetail/script.js"></script>
   </body>
 </html>

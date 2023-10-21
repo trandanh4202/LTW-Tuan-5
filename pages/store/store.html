@@ -38,10 +38,13 @@
         <div
           class="header-upper d-flex align-items container gap-10 text-white"
         >
-          <div class="logo d-flex align-items col col-4 gap-10">
+          <a
+            href="/pages/home/home.html"
+            class="logo d-flex align-items col col-4 gap-10"
+          >
             <img src="/assets/images/logo.png" alt="Logo" />
             <div class="logo-text">Lucky And Power</div>
-          </div>
+          </a>
           <div class="search-bar d-flex align-items col col-4">
             <input type="text" placeholder="Search..." />
             <button>Search</button>
@@ -53,6 +56,23 @@
               class="d-flex justify-content-center align-items gap-10 action"
             >
               <i class="fa-solid fa-cart-shopping"></i>Giỏ hàng
+            </div>
+            <div class="drawer" id="cartDrawer">
+              <h2>Giỏ Hàng</h2>
+              <table id="cartItems">
+                <thead>
+                  <tr class="cart-item-header">
+                    <td class="cart-item-img">Hình ảnh</td>
+                    <td class="cart-item-title">Tên sản phẩm</td>
+                    <td class="cart-item-price">Giá sản phẩm</td>
+                    <td class="cart-item-quantity">Số lượng</td>
+                    <td class="cart-item-total">Tổng tiền</td>
+                  </tr>
+                </thead>
+              </table>
+              <p id="totalPrice">Tổng cộng: $0.00</p>
+              <button id="closeDrawer">Đóng</button>
+              <div class="checkout">Thanh toán</div>
             </div>
             <div
               class="d-flex justify-content-center align-items gap-10 action"
@@ -169,7 +189,7 @@
               <section class="product-show">
                 <div class="product-sale-content">
                   <div class="row">
-                    <div class="col col-2">
+                    <div class="col col-2_4">
                       <div class="product-card">
                         <a href="" class="product-card-detail">
                           <div class="card-top">
@@ -200,7 +220,7 @@
                         </a>
                       </div>
                     </div>
-                    <div class="col col-2">
+                    <div class="col col-2_4">
                       <div class="product-card">
                         <a href="" class="product-card-detail">
                           <div class="card-top">
@@ -231,7 +251,7 @@
                         </a>
                       </div>
                     </div>
-                    <div class="col col-2">
+                    <div class="col col-2_4">
                       <div class="product-card">
                         <a href="" class="product-card-detail">
                           <div class="card-top">
@@ -262,9 +282,12 @@
                         </a>
                       </div>
                     </div>
-                    <div class="col col-2">
+                    <div class="col col-2_4">
                       <div class="product-card">
-                        <a href="" class="product-card-detail">
+                        <a
+                          href="/pages/productDetail/details.html"
+                          class="product-card-detail"
+                        >
                           <div class="card-top">
                             <div class="card-img">
                               <img
@@ -293,38 +316,7 @@
                         </a>
                       </div>
                     </div>
-                    <div class="col col-2">
-                      <div class="product-card">
-                        <a href="" class="product-card-detail">
-                          <div class="card-top">
-                            <div class="card-img">
-                              <img
-                                src="/assets/images/laptop/Laptop_1.webp"
-                                alt=""
-                              />
-                            </div>
-                            <div class="card-label">
-                              <span class="title-label">Tiết kiệm</span>
-                              <span class="content-label">3.700.000 đ</span>
-                            </div>
-                          </div>
-                          <div class="card-body">
-                            <div class="card-title">
-                              Laptop HP 15s-fq2712TU (7C0X2PA) (i3-1115G4/RAM
-                              8GB/256GB SSD/ Windows 11)
-                            </div>
-                            <div class="card-price">
-                              <div class="new-price">8.999.000 đ</div>
-                              <div class="old-price d-flex align-items">
-                                <div class="base-price">12.690.000 đ</div>
-                                <div class="percent-price">29.16%</div>
-                              </div>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col col-2">
+                    <div class="col col-2_4">
                       <div class="product-card">
                         <a href="" class="product-card-detail">
                           <div class="card-top">
