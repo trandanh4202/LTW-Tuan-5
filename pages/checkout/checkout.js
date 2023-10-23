@@ -46,10 +46,13 @@ function displayCartItems() {
   const cart = getCartFromLocalStorage();
   const cartContainer = document.querySelector(".col.col-9");
   cartContainer.innerHTML = "";
+  let total = 0;
 
   cart.forEach((item) => {
     const cartItem = document.createElement("div");
     cartItem.className = "paper";
+    const productTotal = item.price * item.quantity;
+    total += productTotal;
 
     cartItem.innerHTML = `
       <div class="d-flex justify-content-between align-items">
@@ -61,7 +64,7 @@ function displayCartItems() {
           <div class="typography">${item.name}</div>
         </div>
         <div class="flex column-center">
-          <div class="price">${item.price.toFixed(2)}đ</div>
+          <div class="price">${total.toFixed(2)}đ</div>
           <div class="quantity">x${item.quantity}</div>
         </div>
       </div>

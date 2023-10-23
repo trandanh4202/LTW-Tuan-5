@@ -25,8 +25,6 @@
     <div class="speed-dial">
       <img src="/assets/images/mess.png" alt="" />
     </div>
-    <!-- slider -->
-
     <header class="header">
       <div class="bannerTop">
         <img
@@ -42,19 +40,20 @@
         >
           <a
             href="/pages/home/home.html"
-            class="logo d-flex align-items col-4 gap-10"
+            class="logo d-flex align-items col col-4 gap-10"
           >
             <img src="/assets/images/logo.png" alt="Logo" />
             <div class="logo-text">Lucky And Power</div>
           </a>
-          <div class="search-bar d-flex align-items col-4">
+          <div class="search-bar d-flex align-items col col-4">
             <input type="text" placeholder="Search..." />
             <button>Search</button>
           </div>
-          <div class="d-flex align-items justify-content-center gap-20 col-4">
+          <div
+            class="d-flex align-items justify-content-center gap-20 col col-4"
+          >
             <div
               class="d-flex justify-content-center align-items gap-10 action"
-              id="openDrawer"
             >
               <i class="fa-solid fa-cart-shopping"></i>Giỏ hàng
             </div>
@@ -73,9 +72,7 @@
               </table>
               <p id="totalPrice">Tổng cộng: $0.00</p>
               <button id="closeDrawer">Đóng</button>
-              <a href="/pages/checkout/checkout.html" class="checkout"
-                >Thanh toán</a
-              >
+              <div class="checkout">Thanh toán</div>
             </div>
             <div
               class="d-flex justify-content-center align-items gap-10 action"
@@ -88,6 +85,7 @@
             <!-- <div class="icon"><i class="fas fa-sign-in-alt"></i></div> -->
           </div>
         </div>
+
         <nav class="navbar">
           <div class="navbar-menu">
             <a href="home.html">Trang chủ</a> | <a href="">Công nghệ</a> |
@@ -98,104 +96,52 @@
         </nav>
       </div>
     </header>
-
-    <div class="container">
-      <div class="row">
-        <div class="col col-12">
-          <div class="paper">
-            <div class="location-title d-flex align-items">
-              <span class="location-icon"
-                ><i class="fa-solid fa-location-dot"></i
-              ></span>
-              <h2 class="typography">Thông tin nhận hàng</h2>
-            </div>
-            <div class="d-flex align-items">
-              <p class="location-info">
-                Trần Trọng Danh (0913423421) - Khóm 2, Thị trấn Cái Đôi Vàm,
-                huyện Phú Tân, tỉnh Cà Mau
-              </p>
-              <div class="toggle-modal" onclick="openModal()">Thay đổi</div>
+    <section class="container">
+      <div class="technical">
+        <div class="row">
+          <div class="col col-9">
+            <div class="post-wrapper paper d-flex align-items">
+              <div class="post-img">
+                <img src="/assets/images/technical/Technical_1.png" alt="" />
+              </div>
+              <div class="post-content">
+                <div class="post-title">
+                  Game Việt God Of Weapons thành công vang dội sau khi ra mắt 1
+                  tháng
+                </div>
+                <div class="post-time">Tháng Mười 12, 2023</div>
+                <div class="post-description">
+                  Game God of Weapons là tựa game sinh tồn độc đáo do chính
+                  người Việt phát triển dành cho cộng đồng fan Vampire Survivor.
+                  Trò chơi này không có
+                </div>
+              </div>
             </div>
           </div>
-
-          <div id="myModal" class="modal">
-            <h2>Chọn địa chỉ</h2>
-            <ul class="list">
-              <li class="list-item" onclick="selectAddress(this)">
-                <input type="radio" class="radio" name="address" />
-                <label>142 Tô Ký, Thới Tam Thôn, Hóc Môn, Tp. HCM</label>
-              </li>
-              <li class="list-item" onclick="selectAddress(this)">
-                <input type="radio" class="radio" name="address" />
-                <label>02 Võ Oanh, Phường 25, Bình Thạnh, TP. HCM</label>
-              </li>
-            </ul>
-            <button class="modal-button" onclick="closeModal()">Hủy</button>
-            <button class="modal-button" onclick="confirmAddress()">
-              Xác nhận
-            </button>
-          </div>
-        </div>
-        <div class="col col-9">
-          <div class="paper"></div>
-        </div>
-        <div class="col col-3">
-          <div class="paper">
-            <div class="d-flex justify-content-between align-items">
-              <h2 class="price-payment">Tiền sản phẩm:</h2>
-              <p>8.990.000đ</p>
-            </div>
-            <div class="divider"></div>
-            <div class="d-flex justify-content-between align-items">
-              <h2 class="price-payment">Tiền vận chuyển:</h2>
-              <p>8.990.000đ</p>
-            </div>
-            <div class="divider"></div>
-            <div class="d-flex justify-content-between align-items">
-              <h2 class="price-payment">Tiền thu hộ (COD):</h2>
-              <p>8.990.000đ</p>
-            </div>
-            <div class="divider"></div>
-            <div class="d-flex justify-content-between align-items">
-              <h2 style="font-weight: 700; color: black">Tổng tiền</h2>
-              <p style="font-weight: 700; color: #f61900">8.990.000đ</p>
-            </div>
-            <div class="divider"></div>
-            <p>- ĐỔI HÀNG MIỄN PHÍ - Tại tất cả cửa hàng trong 15 ngày</p>
-            <p>- Bạn cũng có thể nhập mã giảm giá ở trang thanh toán.</p>
-            <div class="grid">
-              <div
-                class="box active-border d-flex"
-                onclick="setActive('VNPAY')"
-              >
-                <div class="done-icon">✓</div>
-                <p style="font-size: 15px; padding: 5px">Thanh toán VNPAY</p>
-              </div>
-              <div
-                class="box active-border d-flex"
-                onclick="setActive('Paypal')"
-              >
-                <div class="done-icon">✓</div>
-                <p style="font-size: 15px; padding: 5px">Thanh toán Paypal</p>
-              </div>
-              <div class="box active-border d-flex" onclick="setActive('COD')">
-                <div class="done-icon">✓</div>
-                <p style="font-size: 15px; padding: 5px">
-                  Thanh toán khi nhận hàng
-                </p>
+          <div class="col col-3">
+            <div class="recent-wrapper paper">
+              <h2>Bài viết gần đây</h2>
+              <div class="recent-post">
+                <div class="recent-post__img">
+                  <img
+                    src="/assets/images/technical/Technical_recent_1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="recent-post__title">
+                  Game Việt God Of Weapons thành công vang dội sau khi ra mắt 1
+                  tháng
+                </div>
               </div>
             </div>
-            <button class="btn-check" onclick="handlePayment">
-              Thanh Toán
-            </button>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-3">
+          <div class="col col-3">
             <div class="title">Hỗ trợ khách hàng</div>
             <div class="menu">
               <div class="menu-item">Thẻ ưu đãi</div>
@@ -205,7 +151,7 @@
               <div class="menu-item">Dịch vụ sửa chữa</div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col col-3">
             <div class="title">Hỗ trợ khách hàng</div>
             <div class="menu">
               <div class="menu-item">Thẻ ưu đãi</div>
@@ -215,7 +161,7 @@
               <div class="menu-item">Dịch vụ sửa chữa</div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col col-3">
             <div class="title">Hỗ trợ khách hàng</div>
             <div class="menu">
               <div class="menu-item">Thẻ ưu đãi</div>
@@ -225,7 +171,7 @@
               <div class="menu-item">Dịch vụ sửa chữa</div>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col col-3">
             <div class="title">Hỗ trợ khách hàng</div>
             <div class="menu">
               <div class="menu-item">Thẻ ưu đãi</div>
@@ -237,7 +183,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-4">
+          <div class="col col-4">
             <div class="title">Phương thức thanh toán</div>
             <div class="menu d-flex align-items gap-20">
               <div class="menu-item-icon">
@@ -258,7 +204,7 @@
               </div>
             </div>
           </div>
-          <div class="col-8">
+          <div class="col col-8">
             <div class="title">Danh sách ngân hàng thanh toán online</div>
             <div class="menu">
               <img src="/assets/images/vnpay_bank.png" alt="" />
@@ -267,8 +213,5 @@
         </div>
       </div>
     </footer>
-    <script src="./slider.js"></script>
-    <script src="../productDetail/script.js"></script>
-    <script src="./checkout.js"></script>
   </body>
 </html>

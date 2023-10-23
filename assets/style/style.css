@@ -776,8 +776,9 @@ select {
   transform: translate(75%, -50%) rotate(135deg);
 }
 .filter-title {
-  margin-bottom: 10px;
+  margin: 10px 0;
   font-weight: 600;
+  font-size: 20px;
 }
 .from-price {
   margin-bottom: 10px;
@@ -1021,4 +1022,70 @@ select {
 .price-payment {
   font-size: 18px;
   margin-right: 10px;
+}
+.post-wrapper {
+  background-color: #cccccc1c;
+}
+.post-img {
+  width: 230px;
+  height: 230px;
+  margin-right: 20px;
+  border-radius: 5px;
+
+  overflow: hidden;
+}
+.post-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.post-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+.post-time {
+  margin: 15px 0;
+  font-size: 20px;
+  color: #9e9999;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.recent-wrapper h2 {
+  margin: 10px 0 20px 0;
+}
+.recent-post {
+  position: relative;
+}
+.recent-post__img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.recent-post__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.recent-post__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+}
+.contact-info {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.contact-info i {
+  width: 5%;
+  margin-right: 15px;
+}
+.info {
+  margin: 10px 0;
 }
