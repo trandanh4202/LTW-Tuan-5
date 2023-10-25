@@ -26,6 +26,9 @@ button {
   color: white;
   text-decoration: underline;
 }
+.login {
+  color: white;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -457,6 +460,10 @@ button {
   background-color: rgb(20, 53, 195);
   color: white;
 }
+.arrow-left,
+.arrow-right {
+  cursor: pointer;
+}
 footer {
   background-color: rgb(233, 237, 242);
   padding: 20px;
@@ -587,6 +594,13 @@ footer {
 }
 .detail-select span {
   font-size: 17px;
+}
+.detail-price {
+  color: rgb(20, 53, 195);
+  font-weight: 700;
+  text-decoration: unset;
+  font-size: 25px;
+  line-height: 28px;
 }
 select {
   background-color: #f3f3f3;

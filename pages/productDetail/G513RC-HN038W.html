@@ -40,20 +40,19 @@
         >
           <a
             href="/pages/home/home.html"
-            class="logo d-flex align-items col col-4 gap-10"
+            class="logo d-flex align-items col-4 gap-10"
           >
             <img src="/assets/images/logo.png" alt="Logo" />
             <div class="logo-text">Lucky And Power</div>
           </a>
-          <div class="search-bar d-flex align-items col col-4">
+          <div class="search-bar d-flex align-items col-4">
             <input type="text" placeholder="Search..." />
             <button>Search</button>
           </div>
-          <div
-            class="d-flex align-items justify-content-center gap-20 col col-4"
-          >
+          <div class="d-flex align-items justify-content-center gap-20 col-4">
             <div
               class="d-flex justify-content-center align-items gap-10 action"
+              id="openDrawer"
             >
               <i class="fa-solid fa-cart-shopping"></i>Giỏ hàng
             </div>
@@ -72,16 +71,21 @@
               </table>
               <p id="totalPrice">Tổng cộng: $0.00</p>
               <button id="closeDrawer">Đóng</button>
-              <div class="checkout">Thanh toán</div>
+              <a href="/pages/checkout/checkout.html" class="checkout"
+                >Thanh toán</a
+              >
             </div>
             <div
               class="d-flex justify-content-center align-items gap-10 action"
             >
               <i class="fa-solid fa-bell"></i>Thông báo
             </div>
-            <a href="/pages/checkout/checkout.html" class="checkout"
-              >Thanh toán</a
+            <a
+              href="/pages/login/login.html"
+              class="login d-flex justify-content-center align-items gap-10"
             >
+              <i class="fa-solid fa-user"></i>Đăng nhập
+            </a>
             <!-- <div class="icon"><i class="fas fa-sign-in-alt"></i></div> -->
           </div>
         </div>
@@ -96,48 +100,164 @@
         </nav>
       </div>
     </header>
-    <section class="container">
-      <div class="technical">
+    <div class="container">
+      <div class="product-details">
         <div class="row">
-          <div class="col col-9">
-            <div class="post-wrapper paper d-flex align-items">
-              <div class="post-img">
-                <img src="/assets/images/technical/Technical_1.png" alt="" />
+          <div class="col col-5">
+            <div class="detail-left">
+              <div class="product-img">
+                <img
+                  id="mainImg"
+                  src="/assets/images/single/G513RC-HN038W/Laptop_1.webp"
+                  alt=""
+                />
               </div>
-              <div class="post-content">
-                <div class="post-title">
-                  Game Việt God Of Weapons thành công vang dội sau khi ra mắt 1
-                  tháng
-                </div>
-                <div class="post-time">Tháng Mười 12, 2023</div>
-                <div class="post-description">
-                  Game God of Weapons là tựa game sinh tồn độc đáo do chính
-                  người Việt phát triển dành cho cộng đồng fan Vampire Survivor.
-                  Trò chơi này không có
-                </div>
+              <div class="slider-img d-flex">
+                <img
+                  src="/assets/images/single/G513RC-HN038W/Laptop_2.webp"
+                  alt=""
+                />
+                <img
+                  src="/assets/images/single/G513RC-HN038W/Laptop_3.webp"
+                  alt=""
+                />
+                <img
+                  src="/assets/images/single/G513RC-HN038W/Laptop_4.webp"
+                  alt=""
+                />
               </div>
             </div>
           </div>
-          <div class="col col-3">
-            <div class="recent-wrapper paper">
-              <h2>Bài viết gần đây</h2>
-              <div class="recent-post">
-                <div class="recent-post__img">
-                  <img
-                    src="/assets/images/technical/Technical_recent_1.png"
-                    alt=""
-                  />
+          <div class="col col-7">
+            <div class="detail-right">
+              <div class="detail-title">
+                Laptop ASUS ROG Strix G G513RC-HN038W (Ryzen 7 6800HS/RAM
+                8GB/512GB SSD/ Windows 11)
+              </div>
+              <div class="detail-desc">
+                Thương hiệu ASUS SKU: 220300268 Mã vạch: 603122
+              </div>
+              <div class="detail-price">22.990.000₫</div>
+
+              <div class="detail-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i
+                ><i class="fa-regular fa-star"></i>
+              </div>
+              <div class="detail-select">
+                <span> Lựa chọn: </span>
+                <select value="2">
+                  <option key="1" value="1">1</option>
+                  <option key="1" value="2">2</option>
+                  <option key="1" value="3">3</option>
+                  <option key="1" value="4">4</option>
+                  <option key="1" value="5">5</option>
+                </select>
+              </div>
+              <div class="detail-btn d-flex align-items gap-10">
+                <div class="detail-btn-buy">
+                  <button>Mua ngay</button>
                 </div>
-                <div class="recent-post__title">
-                  Game Việt God Of Weapons thành công vang dội sau khi ra mắt 1
-                  tháng
+                <div class="detail-btn-add">
+                  <button
+                    class="addToCart"
+                    data-name="Sản Phẩm 1"
+                    data-price="10.00"
+                  >
+                    Thêm vào giỏ hàng
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="gift-wrapper">
+              <div class="gift-title">Khuyến mãi đã nhận</div>
+              <div class="gift">
+                <div class="gift-img d-flex align-items">
+                  <img src="/assets/images/single/gift.png" alt="" />
+                  <span
+                    >1x Mã giảm thêm 5% tối đa 500.000đ cho một số sản phẩm Điện
+                    Gia Dụng
+                  </span>
+                </div>
+                <div class="gift-img d-flex align-items">
+                  <img src="/assets/images/single/gift.png" alt="" />
+                  <span
+                    >1x Mã giảm thêm 600.000đ cho màn hình LG Gram View
+                  </span>
+                </div>
+                <div class="gift-img d-flex align-items">
+                  <img src="/assets/images/single/gift.png" alt="" />
+                  <span
+                    >1x Mã giảm thêm 150.000 cho một số chuột Logitech, MSI,
+                    Newmen, Asus, Tai nghe Zidli
+                  </span>
+                </div>
+                <div class="gift-img d-flex align-items">
+                  <img src="/assets/images/single/gift.png" alt="" />
+                  <span
+                    >1x Balo laptop Targus 15.6 TSB883 Black (Safire) (Quà tặng
+                    - logo Phong Vũ)
+                  </span>
+                </div>
+              </div>
+              <div class="gift-choice-wrapper">
+                <div class="gift-choice-title">
+                  Chọn 1 trong những khuyến mãi sau
+                </div>
+                <div class="gift-choice">
+                  <div class="gift-choice-img">
+                    <img src="/assets/images/single/gift.png" alt="" />
+                  </div>
+                  <div class="gift-choice-content">
+                    <div class="content-top">
+                      Giảm 6.500.000₫ (áp dụng vào giá sản phẩm)
+                    </div>
+                    <div class="content-middle">
+                      Khuyến mãi áp dụng khi mua đủ 1 sản phẩm, mua tối thiểu 1
+                      sản phẩm
+                    </div>
+                    <div class="content-bottom">HSD: 10/11/2023</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <div class="reviews">
+        <div class="paper">
+          <h4 class="title">Nhận xét</h4>
+          <div class="comment-box">
+            <h5 class="comment-title">Danh</h5>
+            <div class="rating">
+              <div class="cmt-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i
+                ><i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+            <p class="comment-text">Sản phẩm tốt</p>
+          </div>
+          <div class="comment-box">
+            <h5 class="comment-title">Danh</h5>
+            <div class="rating">
+              <div class="cmt-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i
+                ><i class="fa-regular fa-star"></i>
+              </div>
+            </div>
+            <p class="comment-text">Sản phẩm tốt</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -213,5 +333,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
