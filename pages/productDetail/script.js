@@ -19,10 +19,10 @@ function updateCart() {
       <td class="cart-item-img">
         <img src="${item.image}" alt="" />
       </td>
-      <td class="cart-item-title">${item.name}</td>
-      <td class="cart-item-price">${item.price.toFixed(2)} đ</td>
+      <td class="cart-item-title">${item.name} đ</td>
+      <td class="cart-item-price">${item.price.toLocaleString()} đ</td>
       <td class="cart-item-quantity">x ${item.quantity}</td>
-      <td class="cart-item-total">${productTotal.toFixed(2)} đ</td>
+      <td class="cart-item-total">${productTotal.toLocaleString()} đ</td>
     </tr> `;
     const removeButton = document.createElement("button");
     removeButton.textContent = "Xoá";
@@ -35,7 +35,7 @@ function updateCart() {
     cartItemsList.appendChild(tbody);
     total += productTotal;
   });
-  totalPrice.textContent = `Tổng cộng: $${total.toFixed(2)}`;
+  totalPrice.textContent = `Tổng cộng: ${total.toLocaleString()} đ`;
 
   // Lưu giỏ hàng vào Local Storage
   saveCartToLocalStorage();
@@ -95,9 +95,9 @@ function addToCartFromHTML() {
   // Lấy thông tin sản phẩm từ HTML
   const productImage = document.getElementById("mainImg").src;
   const productName = document.querySelector(".detail-title").textContent;
-  const productPrice = parseFloat(
-    document.querySelector(".detail-price").textContent.replace(/[^\d.]/g, "")
-  );
+  const productPrice = document
+    .querySelector(".detail-price")
+    .textContent.replace(/[,.đ]/g, "");
   const productQuantity = parseInt(
     document.querySelector(".detail-select select").value
   );
