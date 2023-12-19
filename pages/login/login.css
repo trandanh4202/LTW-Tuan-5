@@ -207,3 +207,23 @@ body {
 .bkg {
   background-color: #1435c3;
 }
+
+.error-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border: 1px solid #333333;
+  padding: 10px;
+  background: gainsboro;
+  animation: fadeOut 5s forwards; /* Áp dụng hiệu ứng biến mất trong 2s */
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; /* Trạng thái ban đầu: hoàn toàn hiển thị */
+  }
+  100% {
+    opacity: 0; /* Trạng thái cuối cùng: biến mất hoàn toàn */
+    display: none;
+  }
+}
